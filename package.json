@@ -44,12 +44,12 @@
 		"@types/node": "^22.12.0",
 		"autoprefixer": "^10.4.20",
 		"postcss": "^8.4.49",
-		"wrangler": "4.56.0"
+		"wrangler": "4.68.0"
 	},
 	"private": true,
 	"scripts": {
 		"astro": "astro",
-		"build": "astro build",
+		"build": "astro build && echo '' > dist/.assetsignore",
 		"cf-typegen": "wrangler types",
 		"check": "astro build && tsc && wrangler deploy --dry-run",
 		"deploy": "wrangler deploy",
